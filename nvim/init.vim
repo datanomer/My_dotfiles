@@ -18,12 +18,13 @@ Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completioni
+Plug 'https://github.com/neoclide/coc.nvim', { 'branch': 'release'} " Auto Completioni
 Plug 'https://github.com/m-pilia/vim-ccls' " c and c++ language server
 Plug 'https://github.com/fannheyward/coc-rust-analyzer' " Rust language server
 Plug 'https://github.com/morhetz/gruvbox' "GRUVBOX
 Plug 'https://github.com/neovim/pynvim'
-
+Plug 'https://github.com/rust-lang/rust.vim'
+Plug 'Shirk/vim-gas'
 call plug#end()
 
 let g:NERDTreeDirArrowExpandable="+"
