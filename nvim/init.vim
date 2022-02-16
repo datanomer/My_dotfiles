@@ -7,7 +7,6 @@
 :set softtabstop=4
 :set mouse=a
 :set termguicolors
-:set t_te=
 
 call plug#begin()
 
@@ -23,14 +22,13 @@ Plug 'https://github.com/m-pilia/vim-ccls' " c and c++ language server
 Plug 'https://github.com/fannheyward/coc-rust-analyzer' " Rust language server
 Plug 'https://github.com/morhetz/gruvbox' "GRUVBOX
 Plug 'https://github.com/neovim/pynvim'
-Plug 'https://github.com/rust-lang/rust.vim'
 Plug 'Shirk/vim-gas'
 call plug#end()
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
-:colorscheme gruvbox
+:colorscheme jellybeans
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
