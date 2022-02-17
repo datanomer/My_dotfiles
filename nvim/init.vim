@@ -28,7 +28,7 @@ call plug#end()
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
-:colorscheme jellybeans
+:colorscheme gruvbox
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
