@@ -1,1 +1,1 @@
-These are my current everyday linux utility configs.
+My current everyday linux utility configurations.
