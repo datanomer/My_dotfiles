@@ -7,7 +7,8 @@
 :set softtabstop=4
 :set mouse=a
 :set termguicolors
-
+:set autoindent smartindent
+:set clipboard+=unnamedplus
 call plug#begin()
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
@@ -27,12 +28,19 @@ Plug 'nvim-lua/Plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'glepnir/dashboard-nvim'
 Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
+Plug 'akinsho/bufferline.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'wittyjudge/gruvbox-material.nvim'
 
 call plug#end()
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
+set termguicolors
+lua << EOF
+require("bufferline").setup{}
+EOF
 
 
 let g:dashboard_custom_header = [
@@ -58,13 +66,14 @@ let g:dashboard_custom_header = [
 
 let g:dashboard_default_executive ='telescope'
 
-
-
-:colorscheme ayu
+:colorscheme gruvbox-material 
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
+
+nnoremap <silent>b :BufferLineCycleNext<CR>
+nnoremap <silent>m :BufferLineCyclePrev<CR>
 
 let g:airline_powerline_fonts = 1
 
