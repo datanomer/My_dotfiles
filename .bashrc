@@ -16,9 +16,13 @@ fi
 
 
 # Put your fun stuff here.
-PS1='\[\e[0;91m\][\[\e[0;93m\]\u\[\e[0;32m\]@\[\e[0;38;5;97m\]\H \[\e[0;38;5;145m\]\w\[\e[0;91m\]]\[\e[0;38;5;178m\]\$ \[\e[0m\]' 
-
-
+#Original prompt
+#PS1='\[\e[0;91m\][\[\e[0;93m\]\u\[\e[0;32m\]@\[\e[0;38;5;97m\]\H \[\e[0;38;5;145m\]\w\[\e[0;91m\]]\[\e[0;38;5;178m\]\$ \[\e[0m\]' 
+PS1='\[\e[0;38;5;88m\][\[\e[0;38;5;220m\]\u\[\e[0;38;5;64m\]@\[\e[0;38;5;70m\]\H \[\e[0;38;5;220m\]\w\[\e[0;38;5;88m\]]\[\e[0;38;5;136m\]\$ \[\e[0m\]\[\e[0m\]'  
+#Cool prompt
+#PS1='\[\e[0;38;5;46m\][\[\e[0;38;5;179m\]\u\[\e[0;38;5;28m\]@\[\e[0;38;5;120m\]\h \[\e[0;38;5;67m\]\w\[\e[0;38;5;118m\]] \[\e[0;38;5;226m\]$ \[\e[0m\]' 
+#lAMBDA
+#PS1=' \[\e[0;38;5;208m\]λ \[\e[0;38;5;156m\]\w \[\e[0;38;5;226m\]> \[\e[0m\]' 
 
 #Aliases
 
@@ -27,5 +31,7 @@ alias rn="ranger"
 alias nv="nvim"
 alias v="vim"
 alias poweroff="sudo poweroff"
-alias aplv="apvlv"
 . "$HOME/.cargo/env"
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION
