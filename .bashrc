@@ -27,10 +27,12 @@ PS1='\[\e[0;38;5;88m\][\[\e[0;38;5;220m\]\u\[\e[0;38;5;64m\]@\[\e[0;38;5;70m\]\H
 #Aliases
 
 alias ls="exa"
+alias ll="exa -la"
 alias rn="ranger"
 alias nv="nvim"
 alias v="vim"
 alias poweroff="sudo poweroff"
+alias pdf="apvlv"
 . "$HOME/.cargo/env"
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
