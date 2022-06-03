@@ -8,7 +8,7 @@
 :set mouse=a
 :set termguicolors
 :set autoindent smartindent
-:set clipboard+=unnamedplus
+:set clipboard^=unnamed,unnamedplus
 call plug#begin()
 
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
@@ -31,6 +31,10 @@ Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 Plug 'akinsho/bufferline.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'wittyjudge/gruvbox-material.nvim'
+Plug 'petertriho/nvim-scrollbar'
+Plug 'sharkdp/fd'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'marciomazza/vim-brogrammer-theme'
 
 call plug#end()
 
@@ -66,8 +70,8 @@ let g:dashboard_custom_header = [
 
 let g:dashboard_default_executive ='telescope'
 
-:colorscheme gruvbox-material 
-
+"":colorscheme gruvbox-material 
+:colorscheme brogrammer
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
