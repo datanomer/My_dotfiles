@@ -1,5 +1,5 @@
 ### My current everyday linux utility configurations.
-======
+
 Kitty = terminal emulator
 
 st = simple terminal
