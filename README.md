@@ -4,7 +4,7 @@ Kitty = terminal emulator
 
 st = simple terminal
 
-dwm = Window manager
+dwm and i3 = Window manager
 
 nvim = Text/code editor
 
