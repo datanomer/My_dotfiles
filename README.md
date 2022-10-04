@@ -4,6 +4,8 @@ Kitty = terminal emulator
 
 st = simple terminal
 
+picom = Compositor
+
 dwm and i3 = Window manager
 
 nvim = Text/code editor
