@@ -1,4 +1,4 @@
-### My current everyday linux utility configurations.
+### My current configs for my desktop pc
 
 Kitty = terminal emulator
 
