@@ -6,7 +6,9 @@ st = simple terminal
 
 picom = Compositor
 
-dwm and i3 = Window manager
+i3 = Window manager
+
+dwm = Window manager
 
 nvim = Text/code editor
 
