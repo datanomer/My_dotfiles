@@ -1,4 +1,4 @@
-### My current everyday linux utility configurations.
+### My current configs for my desktop pc
 
 Kitty = terminal emulator
 
@@ -6,7 +6,9 @@ st = simple terminal
 
 picom = Compositor
 
-dwm and i3 = Window manager
+i3 = Window manager
+
+dwm = Window manager
 
 nvim = Text/code editor
 
