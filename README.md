@@ -1,4 +1,4 @@
-### My current configs for my desktop pc
+### My current configs for my PC software
 
 Kitty = terminal emulator
 
