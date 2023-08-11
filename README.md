@@ -14,4 +14,4 @@ nvim = Text/code editor
 
 rofi = App launcher
 
-.bashrc = Bash stuff like aliases and prompt
+.bashrc = Bash stuff like aliases and PS1
