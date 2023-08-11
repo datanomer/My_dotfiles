@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -150,10 +155,20 @@ _G.packer_plugins = {
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-hlslens"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
+    url = "https://github.com/kevinhwang91/nvim-hlslens"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-reload"] = {
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/nvim-reload",
+    url = "https://github.com/famiu/nvim-reload"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -165,6 +180,12 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/nick/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  orgmode = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0" },
+    loaded = true,
+    path = "/home/nick/.local/share/nvim/site/pack/packer/start/orgmode",
+    url = "https://github.com/nvim-orgmode/orgmode"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -193,6 +214,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for nvim-autopairs]], true)
 try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
 time([[Config for nvim-autopairs]], false)
+-- Config for: orgmode
+time([[Config for orgmode]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\forgmode\frequire\0", "config", "orgmode")
+time([[Config for orgmode]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

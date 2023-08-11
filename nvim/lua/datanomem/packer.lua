@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
  --Colorscheme
-  use { "ellisonleao/gruvbox.nvim" }
+--  use { "ellisonleao/gruvbox.nvim" }
 --treesitter
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
   use('nvim-treesitter/playground')
@@ -27,6 +27,9 @@ use {
 --harpoon
   use('theprimeagen/harpoon')
 --The LSP
+
+use 'famiu/nvim-reload'
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
@@ -48,9 +51,37 @@ use {
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-  --Custom statusline
-    use {
-     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+require("mason").setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+        }
+    }
+})
+-- lsp_signature
+use 'ray-x/lsp_signature.nvim'
+
+-- use {'nvim-orgmode/orgmode', config = function()} (
+--  require('orgmode').setup{}
+--end)
+
+use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+	-- Lua initialization file
+	vim.cmd [[colorscheme moonfly]]
+
+use {'kevinhwang91/nvim-hlslens'}
+
+-- Custom statusline
+use { 'nvim-lualine/lualine.nvim', 
+ requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
 end)
+
+
+
+
+
+
+
