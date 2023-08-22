@@ -1,17 +1,17 @@
 ### My current configs for my PC software
 
-Kitty = terminal emulator
+* Kitty = terminal emulator
 
-st = simple terminal
+* st = simple terminal
 
-picom = Compositor
+* picom = Compositor
 
-i3 = Window manager
+* i3 = Window manager
 
-dwm = Window manager
+* dwm = Window manager
 
-nvim = Text/code editor
+* nvim = Text/code editor
 
-rofi = App launcher
+* rofi = App launcher
 
-.bashrc = Bash stuff like aliases and PS1
+* .bashrc = Bash stuff like aliases and PS1
