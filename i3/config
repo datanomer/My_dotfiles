@@ -47,6 +47,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec kitty
 
+#lock screen
+bindsym $mod+l exec i3lock
+
 # kill focused window
 bindsym $mod+c kill
 
@@ -73,7 +76,7 @@ bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
+bindsym $mod+Shift+p move up
 bindsym $mod+Shift+odiaeresis move right
 
 # alternatively, you can use the cursor keys:
