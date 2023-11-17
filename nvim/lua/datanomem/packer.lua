@@ -63,25 +63,30 @@ require("mason").setup({
 -- lsp_signature
 use 'ray-x/lsp_signature.nvim'
 
--- use {'nvim-orgmode/orgmode', config = function()} (
+--  use {'nvim-orgmode/orgmode', config = function()} (
 --  require('orgmode').setup{}
 --end)
-
-use { "bluz71/vim-moonfly-colors", as = "moonfly" }
+use "blazkowolf/gruber-darker.nvim"
+vim.cmd.colorscheme("gruber-darker")
+--use { "bluz71/vim-moonfly-colors", as = "moonfly" }
 	-- Lua initialization file
-	vim.cmd [[colorscheme moonfly]]
+--vim.cmd [[colorscheme moonfly]]
+    -- Lua initialization file
+--    vim.g.moonflyNormalFloat = false
+
+use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+  require("toggleterm").setup()
+end}
+
+use "lukas-reineke/indent-blankline.nvim"
 
 use {'kevinhwang91/nvim-hlslens'}
+
+use  {'kyazdani42/nvim-web-devicons'}
 
 -- Custom statusline
 use { 'nvim-lualine/lualine.nvim', 
  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
 end)
-
-
-
-
-
-
 

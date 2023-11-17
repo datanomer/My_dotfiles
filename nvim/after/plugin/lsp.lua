@@ -41,3 +41,4 @@ vim.diagnostic.config({
   severity_sort = false,
   float = true,
 })
+
