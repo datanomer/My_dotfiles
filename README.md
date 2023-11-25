@@ -11,6 +11,7 @@
 * dwm = Window manager
 
 * nvim = Text/code editor
+⋅⋅*(Uses packer.nvim and lua)
 
 * rofi = App launcher
 
