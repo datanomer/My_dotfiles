@@ -15,4 +15,4 @@
 
 * rofi = App launcher
 
-* .bashrc = Bash stuff like aliases and PS1
+* .bashrc/.zshrc = Bash and zsh stuff like aliases and PS1
