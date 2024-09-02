@@ -1,5 +1,5 @@
-### My current configs for my PC software
-
+### My configs for my Linux utils n' stuff
+### wares(soft):
 * Kitty = terminal emulator
 
 * st = simple terminal
