@@ -13,6 +13,8 @@
 * nvim = Text/code editor
     * (Uses packer.nvim and lua)
 
+* emacs = code editor
+
 * rofi = App launcher
 
 * .bashrc/.zshrc = Bash and zsh stuff like aliases and PS1
